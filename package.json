@@ -1,0 +1,36 @@
+{
+  "name": "javascript-contest",
+  "version": "1.0.0",
+  "description": "This is simple contest for winning free tickets to We Are Developers!!! Make your coffee and get your ticket!!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack --config webpack.config.js",
+    "watch": "webpack --watch --info-verbosity verbose",
+    "serve": "webpack-dev-server --allowed-hosts smart-contest.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmartAcademyVienna/javascript-contest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmartAcademyVienna/javascript-contest/issues"
+  },
+  "homepage": "https://github.com/SmartAcademyVienna/javascript-contest#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^6.0.3",
+    "css-loader": "^2.1.1",
+    "html-loader": "^0.5.5",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^2.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack-dev-server": "^3.4.1"
+  }
+}
