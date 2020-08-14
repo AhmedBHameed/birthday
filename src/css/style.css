@@ -1,19 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
+  width: 100vw;
 }
 body {
   background-color: #4e4d4a;
   position: relative;
-  width: 100vw;
   height: 100vh;
   min-height: 550px;
+}
+
+.outer-container {
+  width: 100vw;
 }
 
 .wish {
   text-align: center;
   margin: 0;
-  padding: 25px;
+  width: 100vw;
+  padding: 20px;
   font-family: "Rajdhani";
   text-transform: uppercase;
   font-size: 40px;
@@ -24,7 +33,7 @@ body {
 
 .container {
   margin: 0 auto 50px;
-  width: 400px;
+  width: 375px;
   height: 100%;
 }
 
@@ -49,8 +58,8 @@ body {
 }
 
 .wheel {
-  width: 400px;
-  height: 400px;
+  width: 375px;
+  height: 375px;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
@@ -58,9 +67,9 @@ body {
 
 .inner-wheel {
   border-radius: 50%;
-  width: 400px;
+  width: 375px;
   display: block;
-  height: 400px;
+  height: 375px;
   position: relative;
   overflow: hidden;
   -webkit-transition: -webkit-transform 1.2s ease-out;
@@ -98,8 +107,8 @@ body {
   height: 0;
   border-style: solid;
   border-width: 200px 116px 0;
-  left: 84px;
-  top: 0px;
+  left: 79px;
+  top: -10px;
   opacity: 1;
   -webkit-transform-origin: 116px 200px;
   transform-origin: 116px 200px;
@@ -131,7 +140,7 @@ body {
   border-color: #bd9391 transparent;
 }
 
-span {
+.custom-span {
   position: relative;
   z-index: 999;
   display: inline-block;
@@ -377,7 +386,7 @@ span {
 .cherry-container-5 {
   position: absolute;
   top: -35px;
-  right: 400px;
+  right: 375px;
   -webkit-transform: rotate(20deg);
   transform: rotate(20deg);
 }
@@ -385,7 +394,7 @@ span {
 .cherry-container-6 {
   position: absolute;
   top: 370px;
-  left: 400px;
+  left: 375px;
   -webkit-transform: rotate(20deg);
   transform: rotate(20deg);
 }
@@ -401,7 +410,7 @@ span {
 .cherry-container-8 {
   position: absolute;
   bottom: -20px;
-  right: 400px;
+  right: 375px;
   -webkit-transform: rotate(-5deg);
   transform: rotate(-5deg);
 }
@@ -419,7 +428,15 @@ span {
 }
 
 .birthday-video {
+  width: 100vw;
   margin-top: 40px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-js {
+  max-width: 360px;
+  max-height: 264px;
 }

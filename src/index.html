@@ -26,19 +26,23 @@
         <div class="wheel">
           <div class="inner-wheel" id="wheel">
             <div class="section">
-              <span class="b-day">Happy Birthday!</span>
+              <span class="b-day custom-span">Happy Birthday!</span>
             </div>
-            <div class="section"><span class="vertical joy">O</span></div>
+            <div class="section">
+              <span class="vertical joy custom-span">O</span>
+            </div>
             <div class="section" id="love">
-              <span class="fa fa-heart pulse"></span>
+              <span class="fa fa-heart pulse custom-span"></span>
             </div>
             <div class="section">
-              <span class="adventure">New Adventures</span>
+              <span class="adventure custom-span">New Adventures</span>
             </div>
-            <div class="section"><span class="vertical fun">U</span></div>
             <div class="section">
-              <span class="lots">lots of</span
-              ><span class="fa fa-birthday-cake"></span>
+              <span class="vertical fun custom-span">U</span>
+            </div>
+            <div class="section">
+              <span class="lots custom-span">lots of</span
+              ><span class="fa fa-birthday-cake custom-span"></span>
             </div>
           </div>
           <div class="spin-button"></div>
@@ -100,9 +104,6 @@
         class="video-js"
         controls
         preload="auto"
-        width="640"
-        height="264"
-        poster="MY_VIDEO_POSTER.jpg"
         data-setup="{}"
       >
         <source src="./public/Minion_Happy_Birthday.mp4" type="video/mp4" />
@@ -115,5 +116,7 @@
         </p>
       </video>
     </div>
+
+    <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
   </body>
 </html>
